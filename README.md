@@ -1,5 +1,78 @@
-1. Чтобы начать, скачайте ядро системы - https://github.com/EOF-413/AmazingMultiTool.
-2. Затем скачайте необходимый плагин, перейдите на главном окне в объект "Добавить модификацию".
-3. Выберете "Добавить через GitHub", вставьте ссылку на репозиторий гитхаб.
+🧰 Amazing MultiTool (AMT)
+AMT — это универсальный лаунчер и менеджер модификаций, написанный на Python 3.11 с использованием PyQt5. Он позволяет легко устанавливать, запускать и управлять плагинами (модификациями) для автоматизации игровых процессов.
+
+🚀 Быстрый старт
+1. Скачайте ядро системы
+Перейдите на страницу релизов и загрузите последнюю версию AMT: [https://github.com/EOF-413/AmazingMultiTool](https://github.com/EOF-413/AmazingMultiTool/releases/tag/1.0.0)
+
+3. Добавьте модификацию
+Запустите AMT_Setup_X.Y.Z_base.exe.
+
+На главном экране нажмите на плитку «Добавить модификацию».
+
+Выберите «Импортировать из GitHub».
+
+Вставьте ссылку на репозиторий модификации.
+
+Модификация автоматически скачается и появится в интерфейсе.
+
+3. Запустите модификацию
+Нажмите зелёную кнопку ▶ на тайле модификации — откроется консоль.
+
+Внутри консоли используйте горячую клавишу (обычно F9) для старта/остановки бота.
+
+📦 Сборка из исходников
+Если вы хотите собрать AMT самостоятельно:
+
+bash
+# Установите зависимости
+pip install -r requirements.txt
+pip install pyinstaller
+
+# Соберите --onedir exe
+pyinstaller --onedir --noconsole --name AMT main.py
+Результат появится в папке dist/AMT/AMT.exe.
+Подробнее о сборке читайте в BUILD.md.
+
+🧩 Структура модификации
+Каждая модификация — это папка в plugins/bots/ со следующей структурой:
+
+text
+plugins/bots/Название/
+├── manifest.json       # описание модификации
+├── main.py             # точка входа
+├── icon.ico            # иконка
+├── requirements.txt    # зависимости (устанавливаются автоматически)
+└── ... (любые другие файлы)
+Пример manifest.json:
+
+json
+{
+    "APP": ["bots", "MyMod"],
+    "APP_NAME": ["My", "Awesome", "Mod"],
+    "APP_VERSION": {
+        "VER": "1.0.0",
+        "DAT": "01.01.2026",
+        "DEV": "YourName"
+    },
+    "APP_GITHUB_LINK": {
+        "GIT": "https://github.com",
+        "DEV": "YourName",
+        "REP": "MyMod"
+    }
+}
+
+🛠 Требования
+Python 3.11 (для запуска модификаций)
+
+Установленные зависимости модификации (устанавливаются автоматически при первом запуске)
+
+🤝 Вклад
+Мы приветствуем ваши идеи и улучшения!
+Создавайте Issue и Pull Request в репозитории проекта.
+
+📄 Лицензия
+Проект распространяется под лицензией MIT.
+
 
 [![Терминал статистики GitHub](https://github-stats-terminal-style-five.vercel.app/api/stats?username=EOF-413%2FAmazingMultiTool&theme=hacker&headerStyle=mac&typingSpeed=100&hostname=github.com&commands=languages%2Cneofetch%2Cgit-log%2Cexit&sourceType=repo&target=EOF-413%2FAmazingMultiTool)](https://github.com/EOF-413/AmazingMultiTool)
