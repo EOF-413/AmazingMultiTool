@@ -1,52 +1,69 @@
-🧰 Amazing MultiTool (AMT)
-AMT — это универсальный лаунчер и менеджер модификаций, написанный на Python 3.11 с использованием PyQt5. Он позволяет легко устанавливать, запускать и управлять плагинами (модификациями) для автоматизации игровых процессов.
+# 🧰 Amazing MultiTool (AMT)
 
-🚀 Быстрый старт
-1. Скачайте ядро системы
-Перейдите на страницу релизов и загрузите последнюю версию AMT: [https://github.com/EOF-413/AmazingMultiTool](https://github.com/EOF-413/AmazingMultiTool/releases/tag/1.0.0)
+<div align="center">
 
-3. Добавьте модификацию
-Запустите AMT_Setup_X.Y.Z_base.exe.
+[![Python](https://img.shields.io/badge/python-3.11.0-purple.svg)](https://www.python.org/)
+[![Version](https://img.shields.io/badge/version-1.0.0-red.svg)](https://github.com/EOF-413/AmazingStreetCleaner)
+[![Windows](https://img.shields.io/badge/platform-Windows-blue.svg)](https://github.com/EOF-413/AmazingStreetCleaner)
+[![Linux](https://img.shields.io/badge/platform-Linux-orange.svg)](https://github.com/EOF-413/AmazingStreetCleaner)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-На главном экране нажмите на плитку «Добавить модификацию».
+</div>
 
-Выберите «Импортировать из GitHub».
+**AMT** — это универсальный лаунчер и менеджер модификаций, написанный на Python 3.11 с использованием PyQt5. Он позволяет легко устанавливать, запускать и управлять плагинами (модификациями) для автоматизации игровых процессов.
 
-Вставьте ссылку на репозиторий модификации.
+---
+
+## 🚀 Быстрый старт
+
+### 1. Скачайте ядро системы
+
+Перейдите на страницу релизов и загрузите последнюю версию AMT: [https://github.com/EOF-413/AmazingMultiTool/releases](https://github.com/EOF-413/AmazingMultiTool/releases)
+
+Запустите установщик `AMT_Setup_X.Y.Z_base.exe`.
+
+### 2. Добавьте модификацию
+
+- На главном экране нажмите на плитку **«Добавить модификацию»**.
+- Выберите **«Импортировать из GitHub»**.
+- Вставьте ссылку на репозиторий модификации (например, `https://github.com/EOF-413/AmazingStreetCleaner`).
 
 Модификация автоматически скачается и появится в интерфейсе.
 
-3. Запустите модификацию
-Нажмите зелёную кнопку ▶ на тайле модификации — откроется консоль.
+### 3. Запустите модификацию
 
-Внутри консоли используйте горячую клавишу (обычно F9) для старта/остановки бота.
+- Нажмите зелёную кнопку **▶** на тайле модификации — откроется консоль.
+- Внутри консоли используйте горячую клавишу (обычно **F9**) для старта/остановки бота.
 
-📦 Сборка из исходников
+---
+
+## 📦 Сборка из исходников
+
 Если вы хотите собрать AMT самостоятельно:
 
-bash
+```bash
 # Установите зависимости
 pip install -r requirements.txt
 pip install pyinstaller
 
 # Соберите --onedir exe
 pyinstaller --onedir --noconsole --name AMT main.py
-Результат появится в папке dist/AMT/AMT.exe.
-Подробнее о сборке читайте в BUILD.md.
+```
 
-🧩 Структура модификации
+## 🧩 Структура модификации
+
 Каждая модификация — это папка в plugins/bots/ со следующей структурой:
-
-text
+```text
 plugins/bots/Название/
 ├── manifest.json       # описание модификации
 ├── main.py             # точка входа
 ├── icon.ico            # иконка
 ├── requirements.txt    # зависимости (устанавливаются автоматически)
 └── ... (любые другие файлы)
-Пример manifest.json:
+```
 
-json
+## Пример manifest.json:
+```json
 {
     "APP": ["bots", "MyMod"],
     "APP_NAME": ["My", "Awesome", "Mod"],
@@ -61,18 +78,18 @@ json
         "REP": "MyMod"
     }
 }
+```
 
-🛠 Требования
+## 🛠 Требования
+
 Python 3.11 (для запуска модификаций)
-
 Установленные зависимости модификации (устанавливаются автоматически при первом запуске)
 
-🤝 Вклад
+## 🤝 Вклад
 Мы приветствуем ваши идеи и улучшения!
 Создавайте Issue и Pull Request в репозитории проекта.
 
-📄 Лицензия
+## 📄 Лицензия
 Проект распространяется под лицензией MIT.
-
 
 [![Терминал статистики GitHub](https://github-stats-terminal-style-five.vercel.app/api/stats?username=EOF-413%2FAmazingMultiTool&theme=hacker&headerStyle=mac&typingSpeed=100&hostname=github.com&commands=languages%2Cneofetch%2Cgit-log%2Cexit&sourceType=repo&target=EOF-413%2FAmazingMultiTool)](https://github.com/EOF-413/AmazingMultiTool)
