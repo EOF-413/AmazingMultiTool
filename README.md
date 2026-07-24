@@ -82,14 +82,22 @@ plugins/bots/Название/
 
 ## 🛠 Требования
 
+```text
 Python 3.11 (для запуска модификаций)
 Установленные зависимости модификации (устанавливаются автоматически при первом запуске)
+```
 
 ## 🤝 Вклад
+
+```text
 Мы приветствуем ваши идеи и улучшения!
 Создавайте Issue и Pull Request в репозитории проекта.
+```
 
 ## 📄 Лицензия
+
+```text
 Проект распространяется под лицензией MIT.
+```
 
 [![Терминал статистики GitHub](https://github-stats-terminal-style-five.vercel.app/api/stats?username=EOF-413%2FAmazingMultiTool&theme=hacker&headerStyle=mac&typingSpeed=100&hostname=github.com&commands=languages%2Cneofetch%2Cgit-log%2Cexit&sourceType=repo&target=EOF-413%2FAmazingMultiTool)](https://github.com/EOF-413/AmazingMultiTool)
