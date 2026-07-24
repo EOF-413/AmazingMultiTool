@@ -18,7 +18,7 @@
 
 ### 1. Скачайте ядро системы
 
-Перейдите на страницу релизов и загрузите последнюю версию AMT: [https://github.com/EOF-413/AmazingMultiTool/releases](https://github.com/EOF-413/AmazingMultiTool/releases)
+Перейдите на страницу релизов: [https://github.com/EOF-413/AmazingMultiTool/releases](https://github.com/EOF-413/AmazingMultiTool/releases)
 
 Запустите установщик `AMT_Setup_X.Y.Z_base.exe`.
 
