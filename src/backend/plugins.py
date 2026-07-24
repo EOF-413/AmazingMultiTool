@@ -119,7 +119,8 @@ class GetFiles:
                         'APP': config['APP'],
                         'APP_NAME': config['APP_NAME'],
                         'APP_VERSION': config['APP_VERSION'],
-                        'APP_GITHUB_LINK': config['APP_GITHUB_LINK']
+                        'APP_GITHUB_LINK': config['APP_GITHUB_LINK'],
+                        'DESCRIPTION': config.get('DESCRIPTION', '')
                     },
                     'APP': {
                         'MAIN': main,

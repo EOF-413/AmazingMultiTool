@@ -12,6 +12,7 @@ from PyQt5.QtCore import Qt, pyqtSignal
 
 # Local
 from ..styles.theme import CONSOLE_QSS, circular_pixmap
+from ..styles.icons import apply_icon
 
 COLOR_MAP = {
     'red': '#f85149',
@@ -73,7 +74,8 @@ class ConsoleWindow(QDialog):
         header_layout.addWidget(title_label)
         header_layout.addStretch(1)
 
-        close_btn = QPushButton('✕')
+        close_btn = QPushButton()
+        apply_icon(close_btn, 'close', size=14, color='#ffffff')
         close_btn.setFixedSize(28, 28)
         close_btn.setObjectName('ConsoleCloseBtn')
         close_btn.setStyleSheet("""

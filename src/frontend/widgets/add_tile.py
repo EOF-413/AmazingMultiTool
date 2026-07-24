@@ -44,9 +44,12 @@ class AddModTile(QFrame):
         return QSize(TILE_WIDTH, TILE_HEIGHT)
 
     def mousePressEvent(self, event):
-        if event.button() == Qt.LeftButton:
-            self._show_menu(event.globalPos())
-        super().mousePressEvent(event)
+        try:
+            if event.button() == Qt.LeftButton:
+                self._show_menu(event.globalPos())
+            super().mousePressEvent(event)
+        except RuntimeError:
+            pass
 
     def _show_menu(self, pos):
         menu = QMenu(self)
