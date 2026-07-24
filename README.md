@@ -3,7 +3,7 @@
 <div align="center">
 
 [![Python](https://img.shields.io/badge/python-3.11.0-purple.svg)](https://www.python.org/)
-[![Version](https://img.shields.io/badge/version-1.0.0-red.svg)](https://github.com/EOF-413/AmazingMultiTool)
+[![Version](https://img.shields.io/badge/version-1.1.0-red.svg)](https://github.com/EOF-413/AmazingMultiTool)
 [![Windows](https://img.shields.io/badge/platform-Windows-blue.svg)](https://github.com/EOF-413/AmazingMultiTool)
 [![Linux](https://img.shields.io/badge/platform-Linux-orange.svg)](https://github.com/EOF-413/AmazingMultiTool)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
